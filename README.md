@@ -25,7 +25,7 @@ git clone https://github.com/dangminh214/RAG-Ollama-simple.git
 ```
 
 2. Backend (Spring Boot):
-     Go into the backend folder:
+   Go into the backend folder:
 
 ```bash
 weekly-todo-backend
@@ -41,10 +41,10 @@ mvnw spring-boot:run
 - H2 Console: http://localhost:8080/h2-console
 
 3.  CORS allows access from:
-http://localhost:3000, 3001, 3002, 3003
+    http://localhost:3000, 3001, 3002, 3003
 
 4. Frontend (React)
- Go into the frontend folder:
+   Go into the frontend folder:
 
 ```bash
 cd weekly-todo-frontend
@@ -59,17 +59,20 @@ npm start
 - Username: sa
 
 - Password: (leave blank)
-6. CORS Configuration 
-Configured in CorsConfig.java to allow requests from:
+6. CORS Configuration
+   Configured in CorsConfig.java to allow requests from:
 
 .allowedOrigins(
-    "http://localhost:3000",
-    "http://localhost:3001",
-    "http://localhost:3002",
-    "http://localhost:3003"
+"http://localhost:3000",
+"http://localhost:3001",
+"http://localhost:3002",
+"http://localhost:3003"
 )
 you can change the localhost port as you wish
 
+## Preview
+
+![Todo List Demo](./assets/Todo-Demo.gif)
 ##  License
 MIT – Free to use, fork, and modify.
 
