@@ -25,6 +25,7 @@ git clone https://github.com/dangminh214/RAG-Ollama-simple.git
 ```
 
 2. Backend (Spring Boot):
+   
    Go into the backend folder:
 
 ```bash
@@ -41,9 +42,10 @@ mvnw spring-boot:run
 - H2 Console: http://localhost:8080/h2-console
 
 3.  CORS allows access from:
+   
     http://localhost:3000, 3001, 3002, 3003
 
-4. Frontend (React)
+5. Frontend (React)
    Go into the frontend folder:
 
 ```bash
@@ -52,6 +54,7 @@ npm install
 npm start
 ```
 5. H2 Database (config) :
+   
 - URL: http://localhost:8080/h2-console
 
 - JDBC URL: jdbc:h2:mem:testdb
@@ -59,7 +62,9 @@ npm start
 - Username: sa
 
 - Password: (leave blank)
+  
 6. CORS Configuration
+
    Configured in CorsConfig.java to allow requests from:
 
 .allowedOrigins(
