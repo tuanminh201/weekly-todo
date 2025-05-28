@@ -1,68 +1,66 @@
-Weekly To-Do List App
-🧠 Overview
-Weekly To-Do List is a fullstack web app that lets you manage tasks by days of the week. It supports add and delete tasks, drag-and-drop between days, task completion toggles, and a beatiful particles background.
+# Weekly To-Do List App
 
-✨ Tech stack:
+## Overview
+
+Weekly To-Do List is a fullstack web app that lets you manage tasks by days of the week. It supports add and delete tasks, drag-and-drop between days, task completion toggles, and a beatiful particles background.
+## Features
+
+- Weekly layout with separate columns per day
+- Drag and drop tasks between days
+- Mark tasks as completed
+- Runs H2 Database locally without need for API keys
+
+## Tech stack:
 
 Frontend: React/TypeScript + Bootstrap
 
 Backend: Java + Spring Boot + H2 Database +Maven
 
 CORS Ready: Supports localhost ports 3000–3003
+## Installation
 
-📁 Project Structure
-weekly-todo/
-├── weekly-todo-backend/     # Spring Boot API & database
-├── weekly-todo-frontend/    # React frontend
-└── README.md               
+1. Clone the repository:
+```bash 
+git clone https://github.com/dangminh214/RAG-Ollama-simple.git
+```
 
-🚀 Getting Started
-1️⃣ Backend (Spring Boot)
-📂 Go into the backend folder:
+2. Backend (Spring Boot):
+     Go into the backend folder:
 
-cd weekly-todo-backend
+```bash
+weekly-todo-backend
 ./mvnw spring-boot:run
+```
 
 Or on Windows:
+```bash
 mvnw spring-boot:run
+```
 
-Runs at: http://localhost:8080
+- Database server runs at: http://localhost:8080
+- H2 Console: http://localhost:8080/h2-console
 
-H2 Console: http://localhost:8080/h2-console
-
-👉 CORS allows access from:
+3.  CORS allows access from:
 http://localhost:3000, 3001, 3002, 3003
 
-2️⃣ Frontend (React)
-📂 Go into the frontend folder:
+4. Frontend (React)
+ Go into the frontend folder:
 
+```bash
 cd weekly-todo-frontend
 npm install
 npm start
+```
+5. H2 Database (config) :
+- URL: http://localhost:8080/h2-console
 
-Runs at: http://localhost:3000
+- JDBC URL: jdbc:h2:mem:testdb
 
-🛢 H2 Database (in-memory)
-URL: http://localhost:8080/h2-console
+- Username: sa
 
-JDBC URL: jdbc:h2:mem:testdb
-
-Username: sa
-
-Password: (leave blank)
-
-🎨 Features
-Weekly layout with separate columns per day
-
-Drag and drop tasks between days
-
-Mark tasks as completed
-
-Add new tasks through a form
-
-🌐 CORS Configuration (Backend)
+- Password: (leave blank)
+6. CORS Configuration 
 Configured in CorsConfig.java to allow requests from:
-
 
 .allowedOrigins(
     "http://localhost:3000",
@@ -70,13 +68,12 @@ Configured in CorsConfig.java to allow requests from:
     "http://localhost:3002",
     "http://localhost:3003"
 )
+you can change the localhost port as you wish
 
-You can update this for production domains later.
-
-📚 License
+##  License
 MIT – Free to use, fork, and modify.
 
-👨‍💻 Author
+## Author
 Tuan Minh Do
 
-Passionate about clean UI, backend APIs, and fullstack development
+note: this is a personal project to learn Java
