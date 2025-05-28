@@ -26,7 +26,7 @@ git clone https://github.com/dangminh214/RAG-Ollama-simple.git
 
 2. Backend (Spring Boot):
    
-   Go into the backend folder:
+Go into the backend folder:
 
 ```bash
 weekly-todo-backend
@@ -45,14 +45,16 @@ mvnw spring-boot:run
    
     http://localhost:3000, 3001, 3002, 3003
 
-5. Frontend (React)
-   Go into the frontend folder:
+4. Frontend (React)
+   
+Go into the frontend folder:
 
 ```bash
 cd weekly-todo-frontend
 npm install
 npm start
 ```
+
 5. H2 Database (config) :
    
 - URL: http://localhost:8080/h2-console
