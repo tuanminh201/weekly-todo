@@ -86,4 +86,3 @@ MIT – Free to use, fork, and modify.
 ## Author
 Tuan Minh Do
 
-note: this is a personal project to learn Java
