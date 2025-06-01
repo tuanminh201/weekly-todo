@@ -21,7 +21,7 @@ CORS Ready: Supports localhost ports 3000–3003
 
 1. Clone the repository:
 ```bash 
-git clone https://github.com/dangminh214/RAG-Ollama-simple.git
+git clone https://github.com/tuanminh201/weekly-todo.git
 ```
 
 2. Backend (Spring Boot):
